@@ -2,8 +2,7 @@
 Repositorio de Entrega Parcial 1
 
 
-## Integrantes: Daniela Casanova
-		Kevin Selave
+## Integrantes: Daniela Casanova, Kevin Selave
 
 
 
