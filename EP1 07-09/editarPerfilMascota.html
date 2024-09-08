@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <!-- Configuración de caracteres, compatibilidad con IE, título de la página y enlaces a hojas de estilo -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/editarPerfilUsuario.css">
+        <link rel="stylesheet" href="Styles/encabezado.css">
+    </head>
+    <body>
+        <!-- Encabezado de la página con enlaces a otras secciones -->
+        <div class="header">
+            <a href="menuMascota.html">
+                <span class="ion--paw-outline"></span>
+                Mis Mascotas
+            </a>
+            <a href="perfilUsuario.html">
+                <span class="profile"></span>
+                Mi perfil
+            </a>
+            <a href="editarPerfilMascota.html">
+                <span class="icon--menu"></span>
+            </a>
+        </div>
+    
+        <!-- Sección principal para editar el perfil de una mascota -->
+        <div class="bloqueEditar">
+            <h2>Editar Perfil de Mascota</h2>
+            <div class="form-group">
+                <!-- Campo para ingresar el nombre de la mascota -->
+                <label for="nombre">Nombre de la Mascota</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Bakan">
+            </div>
+            <div class="form-group">
+                <!-- Campo para seleccionar la especie de la mascota -->
+                <label for="especie">Especie</label>
+                <select id="especie" name="especie">
+                    <option value="" disabled selected>Selecciona una especie</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- Campo para ingresar la raza de la mascota -->
+                <label for="raza">Raza</label>
+                <input type="text" id="raza" name="raza" placeholder="Golden">
+            </div>
+            <div class="form-group">
+                <!-- Campo para ingresar la fecha de cumpleaños de la mascota -->
+                <label for="cumpleanos">Fecha de Cumpleaños</label>
+                <input type="text" id="cumpleanos" name="cumpleanos" placeholder="17-10">
+            </div>
+            <div class="form-group">
+                <!-- Campo para ingresar el peso de la mascota -->
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" name="peso" placeholder="50kg">
+            </div>
+    
+            <!-- Contenedor para la imagen de la mascota y botón para subir una foto -->
+            <div class="container-imgM">
+                <img class="imgPerfil" src="./images/perro0.jpg" alt="Foto de la Mascota">
+                <button class="subirFoto" type="button">Subir Foto</button>
+            </div>
+    
+            <!-- Botones para guardar el perfil de la mascota o cancelar la acción -->
+            <div class="botones">
+                <button class="guardarPerfil">Guardar Perfil</button>
+                <button type="button" class="cancelar" onclick="location.href='perfilMascota.html'">Cancelar</button>
+            </div>
+        </div>
+    </body>
+</html>

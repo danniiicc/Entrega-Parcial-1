@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de caracteres y vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>Iniciar Sesión - Mis Mascotas</title>
+
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" href="estilosInicioSesion.css">
+    <link rel="stylesheet" href="incioSesion/inicioSesion.css">
+    <link rel="stylesheet" href="Styles/encabezado.css">
+
+    <!-- Inclusión de bibliotecas JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="incioSesion/inicioSesion.js"></script>
+</head>
+<body>
+    <!-- Encabezado de la página con enlaces de navegación -->
+    <header class="header">
+        <a><span class="ion--paw-outline"></span> Mis Mascotas</a>
+        <a><span class="profile"></span> Mi perfil</a>
+        <a><span class="icon--menu"></span></a>
+    </header>
+
+    <!-- Sección principal para el inicio de sesión -->
+    <div class="bloqueInicioSesion">
+        <h2>Iniciar Sesión</h2>
+        <form id="inicioSesionForm">
+            <!-- Campo para el nombre de usuario o correo electrónico -->
+            <div class="form-group">
+                <label for="usuario">Nombre de Usuario o Correo Electrónico:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+
+            <!-- Campo para la contraseña -->
+            <div class="form-group">
+                <label for="contrasenya">Contraseña:</label>
+                <input type="password" id="contrasenya" name="contrasenya" required>
+            </div>
+
+            <!-- Selector para elegir el rol del usuario -->
+            <div class="form-group">
+                <label for="rol">Rol:</label>
+                <select id="rol" name="rol" required>
+                  <option value="">Seleccione un rol</option>
+                  <option value="veterinario">Veterinario</option>
+                  <option value="paciente">Paciente</option>
+                </select>
+            </div>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="botonInicioSesion">Iniciar Sesión</button>
+        </form>
+
+        <!-- Enlace para registrarse si no se tiene una cuenta -->
+        <p>¿No tienes una cuenta? <a href="registrarse.html">Regístrate aquí</a></p>
+    </div>
+</body>
+</html>

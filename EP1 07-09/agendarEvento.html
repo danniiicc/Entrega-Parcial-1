@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <!-- Configuración de caracteres, compatibilidad con IE, título de la página, y enlaces a hojas de estilo -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/agendarEvento.css">
+        <link rel="stylesheet" href="Styles/encabezado.css">
+    </head>
+    <body>
+        <!-- Encabezado de la página con enlaces a otras secciones -->
+        <div class="header">
+            <a href="menuMascotaVet.html">
+                <span class="ion--paw-outline"></span>
+                Mis Mascotas
+            </a>
+            <a href="perfilUsuario.html">
+                <span class="profile"></span>
+                Mi perfil
+            </a>
+            <a href="agendarEvento.html">
+                <span class="icon--menu"></span>
+            </a>
+        </div>
+        <!-- Sección principal para agendar un evento -->
+        <div class="seccion">
+            <h2>Agendar Evento</h2>
+            <div class="form-group">
+                <!-- Campo para ingresar el nombre del evento -->
+                <label for="nombre-evento">Nombre de evento</label>
+                <input type="text" id="nombre-evento" name="nombre-evento" placeholder="Nombre de evento">
+            </div>
+            <div class="form-group">
+                <!-- Campo para seleccionar el día del evento -->
+                <label for="dia-evento">Día del evento</label>
+                <input type="date" id="dia-evento" name="dia-evento">
+            </div>
+            <div class="form-group">
+                <!-- Campo para seleccionar la hora del evento -->
+                <label for="hora-evento">Hora del evento</label>
+                <input type="time" id="hora-evento" name="hora-evento">
+            </div>
+            <div class="form-group">
+                <!-- Campo para ingresar la descripción del evento -->
+                <label for="descripcion-evento">Descripción del evento</label>
+                <textarea id="descripcion-evento" name="descripcion-evento" placeholder="Descripción del evento"></textarea>
+            </div>
+            <!-- Botones para guardar el evento o cancelar la acción -->
+            <div class="botones">
+                <button class="guardarPerfil">Guardar evento</button>
+                <button type="button" class="cancelar" onclick="location.href='perfilMascota.html'">Cancelar</button>
+            </div>
+        </div>
+    </body>
+</html>
