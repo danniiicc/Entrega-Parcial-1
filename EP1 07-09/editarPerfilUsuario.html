@@ -1,67 +1,70 @@
 <!DOCTYPE html>
-
 <html>
     <head>
+        <!-- Configuración de caracteres, compatibilidad con IE, título de la página, descripción y enlaces a hojas de estilo y scripts -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>
-        </title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/editarPerfilUsuario.css">
         <link rel="stylesheet" href="Styles/encabezado.css">
         <script src="registro.js" defer></script>
-        
     </head>
     <body>
+        <!-- Encabezado de la página con enlaces a otras secciones -->
         <div class="header">
-
             <a href="menuMascota.html">
                 <span class="ion--paw-outline"></span>
-                Mis Mascotas</a>
+                Mis Mascotas
+            </a>
             <a href="perfilUsuario.html">
                 <span class="profile"></span>
-                Mi perfil</a>
+                Mi perfil
+            </a>
             <a href="editarPerfilMascota.html">
                 <span class="icon--menu"></span>
             </a>
-            
         </div>
+    
+        <!-- Sección principal para editar el perfil de usuario -->
         <div class="bloqueEditar">
             <h2>Editar Perfil de usuario</h2>
             <form action="#">
+                <!-- Campo para ingresar el nombre de usuario -->
                 <label class="etiqueta" for="username">Nombre de usuario</label>
                 <input type="text" id="username" name="username" value="javierc">
 
+                <!-- Campo para ingresar el RUT del usuario -->
                 <label class="etiqueta" for="rut">RUT</label>
                 <input type="text" id="rut" name="rut" value="11111111-1">
     
+                <!-- Campo para ingresar el correo electrónico del usuario -->
                 <label class="etiqueta" for="email">Correo electrónico</label>
                 <input type="email" id="email" name="email" value="javierco@hotmail.con">
 
-                
+                <!-- Selector para elegir la región del usuario -->
                 <label for="region">Región:</label>
                 <select id="region" name="region" required>
                     <option value="">Seleccione una región</option>
                 </select>
             
-            
+                <!-- Selector para elegir la comuna del usuario -->
                 <label for="comuna">Comuna:</label>
                 <select id="comuna" name="comuna" required>
                     <option value="">Seleccione una comuna</option>
                 </select>
-                
     
+                <!-- Imagen de perfil del usuario y botón para subir una nueva foto -->
                 <img class="imgPerfil" src="images\mikey.jpg"/>
-                
                 <button type="button" class="subirFoto">Subir Foto</button>
     
+                <!-- Botones para guardar los cambios o cancelar la edición -->
                 <div class="botones">
                     <button type="submit" class="guardarPerfil">Guardar Perfil</button>
                     <button type="button" class="cancelar" onclick="location.href='perfilUsuario.html'">Cancelar</button>
                 </div>
             </form>
         </div>
-
     </body>
 </html>

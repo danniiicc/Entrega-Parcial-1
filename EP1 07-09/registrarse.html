@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración de caracteres y compatibilidad -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
     <title>Formulario de Registro</title>
+    
+    <!-- Scripts externos para validación de formularios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-
+    
+    <!-- Enlaces a las hojas de estilos -->
     <link rel="stylesheet" href="registro/restRegistro.css">
     <link rel="stylesheet" href="Styles/encabezado.css">
 
+    <!-- Script del formulario de registro -->
     <script src="registro/registro.js" defer></script>
-
-
 </head>
 <body>
+    <!-- Encabezado con enlaces de navegación -->
     <div class="header">
-
         <a href="registrarse.html">
             <span class="ion--paw-outline"></span>
-            Mis Mascotas</a>
+            Mis Mascotas
+        </a>
         <a href="registrarse.html">
             <span class="profile"></span>
-            Mi perfil</a>
+            Mi perfil
+        </a>
         <a href="registrarse.html">
             <span class="icon--menu"></span>
         </a>
-        
     </div>
 
+    <!-- Contenedor del formulario de registro -->
     <div class="bloqueRegistro">
         <h2>Formulario de Registro</h2>
         <form id="registroForm">
+            <!-- Campo para el nombre de usuario -->
             <div class="form-group">
                 <label for="usuario">Nombre de Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required>
             </div>
+            <!-- Campo para el RUT -->
             <div class="form-group">
                 <label for="rut">RUT:</label>
                 <input type="text" id="rut" name="rut" required>
             </div>
+            <!-- Campo para el correo electrónico -->
             <div class="form-group">
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>
             </div>
+            <!-- Campo para seleccionar la región -->
             <div class="form-group">
                 <label for="region">Región:</label>
                 <select id="region" name="region" required>
                     <option value="" disabled selected>Seleccione una región</option>
                 </select>
             </div>
+            <!-- Campo para seleccionar la comuna -->
             <div class="form-group">
                 <label for="comuna">Comuna:</label>
                 <select id="comuna" name="comuna" required>
                     <option value="" disabled selected>Seleccione una comuna</option>
                 </select>
             </div>
+            <!-- Campo para la contraseña -->
             <div class="form-group">
                 <label for="contrasenya">Contraseña:</label>
                 <input type="password" id="contrasenya" name="contrasenya" required>
             </div>
+            <!-- Campo para confirmar la contraseña -->
             <div class="form-group">
                 <label for="recontrasenya">Confirmar Contraseña:</label>
                 <input type="password" id="recontrasenya" name="recontrasenya" required>
             </div>
+            <!-- Checkbox para aceptar términos y condiciones -->
             <div class="form-group terminos-group">
                 <input type="checkbox" id="terminos" name="terminos" required>
                 <label for="terminos">Acepto los términos y condiciones</label>
             </div>
+            <!-- Botón de envío del formulario -->
             <button type="submit" class="botonRegistro">Registrarse</button>
         </form>
     </div>
-
 </body>
 </html>

@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Configuración de caracteres y compatibilidad -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Título de la página -->
         <title>Mis Mascotas</title>
+
+        <!-- Meta descripción y viewport para compatibilidad con dispositivos móviles -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Enlace a la hoja de estilos -->
         <link rel="stylesheet" href="Styles/menuMascota.css">
-        
+
+        <!-- Script externo (vacío en este caso) -->
         <script src="" async defer></script>
     </head>
 
     <body>
+        <!-- Encabezado con enlaces de navegación -->
         <div class="header">
-
             <a href="menuMascota.html">
                 <span class="ion--paw-outline"></span>
-                Mis Mascotas</a>
+                Mis Mascotas
+            </a>
             <a href="perfilUsuario.html">
                 <span class="profile"></span>
-                Mi perfil</a>
+                Mi perfil
+            </a>
             <a href="menuMascota.html">
                 <span class="icon--menu"></span>
             </a>
-            
         </div>
     
+        <!-- Contenedor principal de perfiles de mascotas -->
         <div class="container">
+            <!-- Enlace al perfil de una mascota con imagen y detalles -->
             <a href="PerfilMascota.html" class="bloquePerfil">
-
-                <div class="cuadrado" ><img src="./images/perro0.jpg" alt="Bakan"></div>
+                <div class="cuadrado">
+                    <img src="./images/perro0.jpg" alt="Bakan">
+                </div>
                 <div>
                     <p class="nombre">Bakan</p>
                     <p class="raza">Golden Retriever</p>
                 </div>
             </a>
     
+            <!-- Enlace al perfil de otra mascota con imagen y detalles -->
             <a href="PerfilMascota.html" class="bloquePerfil">
-                <div class="cuadrado" ><img src="./images/perro1.jpg" alt="Benji"></div>
-                
+                <div class="cuadrado">
+                    <img src="./images/perro1.jpg" alt="Benji">
+                </div>
                 <div>
                     <p class="nombre">Benji</p>
                     <p class="raza">Labrador</p>
                 </div>
             </a>
 
+            <!-- Enlace para agregar una nueva mascota -->
             <a href="agregarMascota.html" class="agregarMascota">
                 +
             </a>
-            
-  
         </div>
-
     </body>
 </html>
