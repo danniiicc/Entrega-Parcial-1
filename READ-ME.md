@@ -1,8 +1,4 @@
-# EP2: Implementación de Mockups UI en Ionic y Funcionalidades Adicionales
-
-## Descripción del Proyecto
-
-Este proyecto consiste en la implementación de siete mockups de interfaz de usuario (UI) utilizando el framework Ionic, incluyendo dos formularios de inicio de sesión y registro. Además, se ha desarrollado una funcionalidad para leer datos desde un archivo JSON y se ha diseñado un modelo de base de datos que se puede implementar en diferentes motores de bases de datos.
+# EP2: Proyecto Aplicación para mascotas
 
 ## Tabla de Contenidos
 
@@ -15,32 +11,26 @@ Este proyecto consiste en la implementación de siete mockups de interfaz de usu
 
 Se implementaron siete mockups de UI en el framework Ionic. Los mockups incluyen:
 
-1. **Pantalla de Inicio**
-2. **Pantalla de Registro**
-3. **Pantalla de Inicio de Sesión**
-4. **Pantalla de Perfil de Usuario**
-5. **Pantalla de Listado de Mascotas**
-6. **Pantalla de Detalle de Mascota**
-7. **Pantalla de Configuración**
+1. Mis mascotas (inicio)
+2. Perfil de una mascota
+3. Editar datos de una mascota
+4. Agregar mascotas
+5. Perfil de un usuario
+6. Editar datos de un perfil
+7. Agregar un evento a una mascota
 
-Los formularios de inicio de sesión y registro permiten a los usuarios crear una cuenta y acceder a la aplicación de manera segura.
+Además de los formularios de inicio de sesión y registro que permiten a los usuarios crear una cuenta y acceder a la aplicación de manera segura.
 
 ## EP2.2: Lectura de Datos desde JSON
 
-Se implementó la funcionalidad para leer datos desde un archivo JSON, que puede ser local o de una fuente externa. Estos datos se muestran en una de las pantallas de la aplicación, proporcionando una experiencia dinámica y actualizada al usuario.
+Se implementó lectura de datos desde un archivo JSON, de manera local Estos datos se muestran en una de las pantallas de la aplicación, desde el archivo data/punto.json
 
-### Ejemplo de Archivo JSON
 
-```json
-[
-    {
-        "nombre": "Juan",
-        "edad": 30,
-        "mascota": "Perro"
-    },
-    {
-        "nombre": "Ana",
-        "edad": 25,
-        "mascota": "Gato"
-    }
-]
+## EP2.3: Modelo de la Base de Datos
+Hemos decidido implementar sqLite debido a la dimensión del proyecto, ya que estaremos trabajando con una base de datos pequeña y sin grandes volumenes de registros.
+Además el equipo tiene experiencia trabajando con el mismo lo que facilitará la implementación.
+
+
+## EP2.4: Uso de Patrones de Diseño
+Para este punto incluimos encabezados con logos intuitivos, mensajes de retroalimentación, pie de página, entre otros
+
